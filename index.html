@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Saludable - Portfolio Interactivo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Imagen de Fondo Completa -->
+    <div id="fondo-imagen">
+        <img id="imagen-principal" src="" alt="Comida Saludable">
+    </div>
+
+    <!-- Layout Principal con Contenido Superpuesto -->
+    <div id="app-layout">
+        
+        <!-- Columna Izquierda: Números de Paginación -->
+        <div id="paginacion">
+            <!-- Los números se generarán dinámicamente desde JavaScript -->
+        </div>
+
+        <!-- Columna Central: Área Transparente -->
+        <div id="area-central">
+            <!-- Esta área es transparente para mostrar la imagen de fondo -->
+        </div>
+
+        <!-- Columna Derecha: Información del Plato -->
+        <div id="info">
+            <!-- Navegación superior -->
+            <div class="nav-header">
+                <span class="nav-link">top</span>
+                <span class="nav-link">works</span>
+                <span class="nav-link">about</span>
+                <span class="nav-link">news</span>
+                <span class="nav-link">contact</span>
+            </div>
+
+            <!-- Título del plato actual -->
+            <div class="contenedor-titulo">
+                <a id="titulo-comida" href="#"></a>
+            </div>
+
+            <!-- Logo/Marca -->
+            <div class="marca">
+                COMIDA SALUDABLE
+                <span class="subtitulo"></span>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">©2025</div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/data.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

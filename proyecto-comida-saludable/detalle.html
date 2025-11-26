@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle - Comida Saludable</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-detalle">
+    <!-- Contenedor Principal de Detalle -->
+    <div id="detalle-contenedor">
+        
+        <!-- Enlace para volver -->
+        <a href="index.html" class="boton-volver">
+            <span class="flecha">←</span> Volver
+        </a>
+
+        <!-- Contenido del Detalle -->
+        <div class="detalle-contenido">
+            
+            <!-- Imagen del Plato -->
+            <div id="detalle-imagen">
+                <!-- La imagen se insertará dinámicamente -->
+            </div>
+
+            <!-- Información del Plato -->
+            <div class="detalle-info">
+                <!-- Título del Plato -->
+                <h1 id="detalle-titulo"></h1>
+
+                <!-- Descripción del Plato -->
+                <div id="detalle-descripcion"></div>
+
+                <!-- Información Adicional (opcional) -->
+                <div class="info-adicional">
+                    <div class="badge">SALUDABLE</div>
+                    <div class="badge">ORGÁNICO</div>
+                    <div class="badge">NUTRITIVO</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/data.js"></script>
+    <script type="module" src="js/components.js"></script>
+    <script type="module" src="js/detalle.js"></script>
+</body>
+</html>
