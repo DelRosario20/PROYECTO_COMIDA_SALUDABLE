@@ -127,7 +127,7 @@ export const comidas = [
       tiempo: {
         titulo: "Desglose del Tiempo de Preparación - 40 minutos",
         contenido: "Los 40 minutos totales se dividen así: 5 min para lavar y preparar ingredientes, 15 min para cocinar la quinoa (mientras tanto puedes hacer otras cosas), 10 min para preparar los huevos poché (la técnica más delicada), 5 min para saltear y ensamblar el plato, y 5 min para el emplatado final. Es un tiempo razonable para un desayuno de fin de semana o un almuerzo entre semana cuando trabajas desde casa. Una vez que domines la técnica del huevo poché, podrás reducir el tiempo. Puedes preparar la quinoa con anticipación y guardarla refrigerada hasta 3 días, reduciendo el tiempo a solo 15 minutos. ¡Mira nuestro video tutorial para dominar la técnica perfecta del huevo poché!",
-        videoYoutube: "VhHtk-P87vI"  // Video tutorial de huevo poché
+        videoYoutube: "FnbdXC2eBcw"  // Video tutorial de huevo poché
       }
     }
   },
@@ -266,7 +266,7 @@ export const comidas = [
       tiempo: {
         titulo: "Preparación Rápida - Solo 30 Minutos",
         contenido: "Este plato se completa en apenas 30 minutos totales: 10 minutos de preparación activa (lavar espárragos, sazonar salmón, cortar limón y ajo) y 20 minutos de cocción en el horno mientras puedes atender otras tareas. Lo que hace esta receta excepcionalmente práctica es que todo se cocina en una sola bandeja, eliminando múltiples ollas y sartenes. Durante la cocción, puedes preparar una ensalada, poner la mesa, o simplemente relajarte. No requiere habilidades culinarias avanzadas ni técnicas complicadas. Es la solución perfecta para cenas entre semana cuando llegas cansado pero no quieres sacrificar la nutrición por comida rápida. Una vez que pruebes lo fácil que es, se convertirá en tu go-to para comidas elegantes pero sin estrés. ¡Mira nuestro video para ver lo simple que es!",
-        videoYoutube: "xqvTZElFWUA"  // Video de salmón al horno
+        videoYoutube: "MfENP70qAiM"  // Video de salmón al horno
       }
     }
   },
@@ -409,7 +409,7 @@ export const comidas = [
       tiempo: {
         titulo: "Preparación Express - 5 Minutos Totales",
         contenido: "Este smoothie es la definición de comida rápida saludable. Los 5 minutos se desglosan así: 1 minuto para sacar ingredientes del refrigerador, 2 minutos para lavar y picar (las hojas verdes, la manzana y el plátano), 1-2 minutos para licuar (dependiendo de la potencia de tu licuadora), y 30 segundos para servir y decorar. No hay cocción involucrada, cero tiempo de horno, cero tiempos de espera. Es incluso más rápido que preparar café. Si congelas el plátano con anticipación y pre-lavas las hojas verdes el fin de semana, puedes reducir el tiempo a literalmente 2 minutos. Es perfecto para cuando tienes que salir corriendo de casa, necesitas algo nutritivo entre juntas, o quieres un snack saludable al instante. La eficiencia no significa sacrificar nutrición. ¡Ve nuestro video tutorial para ver lo fácil que es!",
-        videoYoutube: "ub2dh29JQyE"  // Video de smoothie verde
+        videoYoutube: "7At5vJUoiiM"  // Video de smoothie verde
       }
     }
   },
@@ -548,7 +548,7 @@ export const comidas = [
       tiempo: {
         titulo: "Tiempo de Preparación - 30 Minutos",
         contenido: "Los 30 minutos totales se desglosan en 5 minutos de preparación activa y 25 minutos de horneado pasivo. Durante la preparación activa, lavas y cortas la batata en rodajas uniformes (2 min), la sazonas y colocas en la bandeja (1 min), y preparas el puré de aguacate (2 min). Los 25 minutos de horneado son tiempo pasivo donde puedes ducharte, vestirte, preparar café, o atender otras tareas matutinas. Es importante voltear las batatas a mitad de cocción (12-13 minutos) para asegurar que se doren uniformemente. Una vez horneadas, el montaje final toma solo 2 minutos: untar aguacate, espolvorear chía, añadir pimentón y hierbas. Puedes preparar las rodajas de batata horneadas con anticipación (duran 3 días refrigeradas) y simplemente calentarlas y añadir toppings frescos, reduciendo el tiempo a 10 minutos. Es inversión mínima de tiempo para máximo retorno nutricional. ¡Mira el video tutorial!",
-        videoYoutube: "J8J5AUSX6oQ"  // Video de tostada de batata
+        videoYoutube: "Dd2_Hgl0QvI"  // Video de tostada de batata
       }
     }
   },
@@ -691,7 +691,7 @@ export const comidas = [
       tiempo: {
         titulo: "Preparación Rápida - 15 Minutos",
         contenido: "Esta ensalada demuestra que comer saludable no tiene que consumir tu tiempo. Los 15 minutos totales no involucran cocción, solo preparación fresca. Puedes hacerla aún más rápida con estos trucos: compra hojas verdes pre-lavadas (ahorra 5 min), usa vegetales pre-cortados del supermercado (ahorra 3 min), prepara el aderezo en lotes grandes los domingos y guárdalo refrigerado (ahorra 2 min). Con estas optimizaciones, puedes tener la ensalada lista en literalmente 5 minutos. Es más rápido que hacer un sándwich y 100 veces más nutritivo. Perfecta para preparar a última hora cuando no planificaste la comida, cuando llegas tarde del trabajo, o cuando recibes visitas inesperadas. La belleza de esta ensalada es que siempre puedes tener los ingredientes base en tu refrigerador (duran una semana) listos para ser ensamblados al instante. ¡Mira nuestro video de preparación express!",
-        videoYoutube: "PfDaQqh5oXA"  // Video de ensalada mediterránea
+        videoYoutube: "EIOgi1VNCus"  // Video de ensalada mediterránea
       }
     }
   },
@@ -843,7 +843,7 @@ export const comidas = [
       tiempo: {
         titulo: "Tiempo de Preparación - 45 Minutos",
         contenido: "Los 45 minutos totales pueden parecer largos, pero gran parte es tiempo pasivo de cocción. Desglose: 25-30 minutos para cocinar el arroz integral (tiempo pasivo, puedes hacer otras cosas), 10 minutos para marinar el tofu (también pasivo), 5-7 minutos para cocinar el tofu en la sartén (supervisión mínima), 10 minutos para picar todos los vegetales, 2 minutos para preparar la salsa de tahini, y 3 minutos para ensamblar el bowl. La belleza de este plato es que puedes preparar componentes con anticipación: cocina el arroz integral el domingo y guárdalo refrigerado hasta 5 días, marina y cocina el tofu con anticipación (dura 4 días), y pre-corta los vegetales (duran 2-3 días en contenedores herméticos). Con meal prep, puedes reducir el tiempo de ensamblaje a literalmente 5 minutos: sacar ingredientes del refrigerador, calentar arroz y tofu 1 minuto en microondas, ensamblar y comer. Es inversión inteligente de tiempo para comidas nutritivas toda la semana. ¡Mira nuestro video de meal prep!",
-        videoYoutube: "wN0Gl5MJTY0"  // Video de Buddha Bowl
+        videoYoutube: "WQm6Q7hA8ZU"  // Video de Buddha Bowl
       }
     }
   },
@@ -1000,7 +1000,7 @@ export const comidas = [
       tiempo: {
         titulo: "Preparación Eficiente - 25 Minutos Totales",
         contenido: "Los 25 minutos de preparación están optimizados para máxima eficiencia. Así es como funciona el tiempo: Minuto 0-5: mientras precalientas la sartén grill, prepara el hummus en la procesadora (30 segundos activos, 4 minutos procesando). Minuto 5-12: cocina el pollo en la parrilla (7 minutos, voltea una vez). Minuto 7-12: mientras se cocina el pollo, pica todos los vegetales simultáneamente. Minuto 12-14: deja reposar el pollo y córtalo en tiras. Minuto 14-20: ensambla ambos wraps paso a paso. Minuto 20-25: corta, envuelve y guarda o sirve. Con multitasking, aprovechas cada minuto. Para acelerar más: usa pollo precocido (ahorra 12 min), usa hummus comprado (ahorra 5 min), compra vegetales pre-cortados (ahorra 5 min). Con estas optimizaciones, tiempo total: 3 minutos. Es la eficiencia máxima sin sacrificar calidad. ¡Mira nuestro video de preparación rápida!",
-        videoYoutube: "ONvKqt9-kyk"  // Video de wrap de pollo
+        videoYoutube: "vTbm0mP4yZ0"  // Video de wrap de pollo
       }
     }
   },
@@ -1155,7 +1155,7 @@ export const comidas = [
       tiempo: {
         titulo: "Preparación Ultra Rápida - Solo 10 Minutos",
         contenido: "Los 10 minutos de preparación son tan rápidos que literalmente no tienes excusa para no desayunar saludablemente. Desglose exacto: Minuto 0-3: saca el açai del congelador y déjalo ablandar 3 minutos mientras preparas otros ingredientes. Minuto 3-5: corta el plátano congelado, saca frutas frescas y toppings del refrigerador. Minuto 5-7: licua la base de açai hasta consistencia cremosa (1-2 minutos de licuado). Minuto 7-8: vierte la base en el bowl y alisa la superficie. Minuto 8-10: decora artísticamente con todos los toppings en secciones coloridas. Es más rápido que ir a un café y ordenar un latte, más económico que comprar un açai bowl en restaurante ($12-15), e infinitamente más saludable que un desayuno de drive-through. Si congelas plátanos con anticipación y tienes açai en stock, puedes hacerlo cada mañana sin pensarlo. Es la inversión mínima de tiempo para retorno máximo de nutrición y energía. ¡Mira el video para ver lo simple que es!",
-        videoYoutube: "kB6rFPm8eX4"  // Video de açai bowl
+        videoYoutube: "63-9kcAz6yI"  // Video de açai bowl
       }
     }
   }
