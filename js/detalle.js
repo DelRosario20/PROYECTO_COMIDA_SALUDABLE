@@ -78,9 +78,14 @@ function mostrarDetallesComida(comida) {
     // Actualizar la descripción breve
     descripcionElemento.textContent = comida.descripcion;
     
-    // Reemplazar las etiquetas con las del data.js
+    // Reemplazar las etiquetas con las interactivas (NUEVO - pasamos infoModales)
     if (infoAdicional) {
-        const nuevasEtiquetas = renderEtiquetas(comida.etiquetas, comida.calorias, comida.tiempo);
+        const nuevasEtiquetas = renderEtiquetas(
+            comida.etiquetas, 
+            comida.calorias, 
+            comida.tiempo,
+            comida.infoModales  // <- IMPORTANTE: Pasar la info de modales
+        );
         infoAdicional.parentNode.replaceChild(nuevasEtiquetas, infoAdicional);
     }
     
@@ -218,7 +223,7 @@ function aplicarAnimacionesEntrada() {
     }
     
     // Animar los badges
-    const badges = document.querySelectorAll('.badge');
+    const badges = document.querySelectorAll('.badge, .badge-interactivo');
     badges.forEach((badge, index) => {
         badge.style.opacity = '0';
         badge.style.transform = 'translateY(20px)';

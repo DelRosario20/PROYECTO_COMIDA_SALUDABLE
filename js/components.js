@@ -1,36 +1,65 @@
 // js/components.js - Componentes reutilizables para renderizar secciones de detalle
 
+// Importar funciones de modales
+import { crearBadgeInteractivo } from './modales.js';
+
 /**
- * Renderiza las etiquetas (badges) de una comida
+ * Renderiza las etiquetas (badges) de una comida con funcionalidad interactiva
  */
-export function renderEtiquetas(etiquetas, calorias, tiempo) {
+export function renderEtiquetas(etiquetas, calorias, tiempo, infoModales = null) {
     const container = document.createElement('div');
     container.className = 'info-adicional';
     
-    // Agregar etiquetas
+    // Agregar etiquetas interactivas
     if (etiquetas && etiquetas.length > 0) {
         etiquetas.forEach(etiqueta => {
-            const badge = document.createElement('div');
-            badge.className = 'badge';
-            badge.textContent = etiqueta;
-            container.appendChild(badge);
+            // Si hay información de modales, crear badge interactivo
+            if (infoModales && infoModales.etiquetas && infoModales.etiquetas[etiqueta]) {
+                const badgeInteractivo = crearBadgeInteractivo(
+                    etiqueta,
+                    infoModales.etiquetas[etiqueta]
+                );
+                container.appendChild(badgeInteractivo);
+            } else {
+                // Si no hay info de modal, crear badge normal
+                const badge = document.createElement('div');
+                badge.className = 'badge';
+                badge.textContent = etiqueta;
+                container.appendChild(badge);
+            }
         });
     }
     
-    // Agregar calorías si existen
+    // Agregar calorías interactivas si existen
     if (calorias) {
-        const badgeCalorias = document.createElement('div');
-        badgeCalorias.className = 'badge';
-        badgeCalorias.textContent = calorias;
-        container.appendChild(badgeCalorias);
+        if (infoModales && infoModales.calorias) {
+            const badgeCaloriasInteractivo = crearBadgeInteractivo(
+                calorias,
+                infoModales.calorias
+            );
+            container.appendChild(badgeCaloriasInteractivo);
+        } else {
+            const badgeCalorias = document.createElement('div');
+            badgeCalorias.className = 'badge';
+            badgeCalorias.textContent = calorias;
+            container.appendChild(badgeCalorias);
+        }
     }
     
-    // Agregar tiempo total si existe
+    // Agregar tiempo interactivo si existe
     if (tiempo && tiempo.total) {
-        const badgeTiempo = document.createElement('div');
-        badgeTiempo.className = 'badge';
-        badgeTiempo.textContent = tiempo.total;
-        container.appendChild(badgeTiempo);
+        if (infoModales && infoModales.tiempo) {
+            const badgeTiempoInteractivo = crearBadgeInteractivo(
+                tiempo.total,
+                infoModales.tiempo
+            );
+            container.appendChild(badgeTiempoInteractivo);
+        } else {
+            const badgeTiempo = document.createElement('div');
+            badgeTiempo.className = 'badge';
+            badgeTiempo.textContent = tiempo.total;
+            container.appendChild(badgeTiempo);
+        }
     }
     
     return container;

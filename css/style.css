@@ -937,3 +937,283 @@ body.pagina-detalle {
 .contenido-expandido > *:nth-child(5) { animation-delay: 0.5s; }
 .contenido-expandido > *:nth-child(6) { animation-delay: 0.6s; }
 .contenido-expandido > *:nth-child(7) { animation-delay: 0.7s; }
+
+/* ==================== BADGE INTERACTIVO ==================== */
+.badge-interactivo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #666;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.badge-interactivo:hover {
+    background: rgba(76, 175, 80, 0.15);
+    border-color: rgba(76, 175, 80, 0.4);
+    color: #4CAF50;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.badge-interactivo:active {
+    transform: translateY(0);
+}
+
+.badge-icono {
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.badge-interactivo:hover .badge-icono {
+    opacity: 1;
+}
+
+/* ==================== MODAL OVERLAY ==================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.activo {
+    opacity: 1;
+}
+
+/* ==================== MODAL CONTAINER ==================== */
+
+.modal-container {
+    max-width: 700px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+    transform: scale(0.9) translateY(30px);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-container.activo {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+/* Scrollbar personalizada para el modal */
+.modal-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.modal-container::-webkit-scrollbar-thumb {
+    background: rgba(76, 175, 80, 0.5);
+    border-radius: 4px;
+}
+
+.modal-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(76, 175, 80, 0.7);
+}
+
+/* ==================== MODAL CONTENT ==================== */
+
+.modal-content {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    position: relative;
+    animation: modalSlideIn 0.4s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==================== BOTÓN DE CERRAR ==================== */
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    color: #888;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    background: rgba(255, 82, 82, 0.2);
+    color: #ff5252;
+    transform: rotate(90deg);
+}
+
+.modal-close:active {
+    transform: rotate(90deg) scale(0.95);
+}
+
+/* ==================== TÍTULO DEL MODAL ==================== */
+
+.modal-titulo {
+    font-size: 32px;
+    color: #4CAF50;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+}
+
+/* ==================== TEXTO DEL MODAL ==================== */
+
+.modal-texto {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #c0c0c0;
+    margin: 0 0 20px 0;
+}
+
+/* ==================== VIDEO DE YOUTUBE ==================== */
+
+.modal-video-container {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(76, 175, 80, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+}
+
+.modal-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ==================== RESPONSIVE - MÓVILES ==================== */
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 30px 25px;
+    }
+
+    .modal-titulo {
+        font-size: 24px;
+    }
+
+    .modal-texto {
+        font-size: 15px;
+    }
+
+    .badge-interactivo {
+        font-size: 10px;
+        padding: 6px 15px;
+    }
+
+    .modal-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 25px 20px;
+    }
+
+    .modal-titulo {
+        font-size: 20px;
+    }
+
+    .modal-texto {
+        font-size: 14px;
+    }
+
+    .modal-close {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+    }
+}
+
+/* ==================== ANIMACIONES ADICIONALES ==================== */
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.badge-interactivo:focus {
+    outline: 2px solid rgba(76, 175, 80, 0.5);
+    outline-offset: 2px;
+}
+
+/* ==================== ACCESIBILIDAD ==================== */
+
+.badge-interactivo:focus-visible {
+    outline: 2px solid #4CAF50;
+    outline-offset: 3px;
+}
+
+.modal-close:focus-visible {
+    outline: 2px solid #ff5252;
+    outline-offset: 2px;
+}
+
+/* Reducir animaciones para usuarios con preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .modal-overlay,
+    .modal-container,
+    .modal-content,
+    .badge-interactivo,
+    .modal-close {
+        animation: none;
+        transition: none;
+    }
+}

@@ -1,4 +1,4 @@
-// js/data.js - Base de datos expandida de contenido de comidas saludables
+// js/data.js - Base de datos expandida de contenido de comidas saludables con información de modales
 export const comidas = [
   {
     id: 1,
@@ -102,8 +102,36 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["quinoa", "desayuno", "salmón", "huevo", "cena", "parisino"]
+    palabrasClave: ["quinoa", "desayuno", "salmón", "huevo", "cena", "parisino"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "SALUDABLE": {
+          titulo: "¿Por qué es saludable este Bowl de Quinoa?",
+          contenido: "Este bowl combina ingredientes naturales sin procesados que trabajan en sinergia para tu bienestar. La quinoa es un pseudocereal que proporciona proteína completa con todos los aminoácidos esenciales. Los huevos aportan colina para la salud cerebral, el salmón ofrece omega-3 antiinflamatorio, y el aguacate brinda grasas monoinsaturadas que protegen tu corazón. Cada componente fue seleccionado por su densidad nutricional, no por calorías vacías. Es una comida que nutre cada célula de tu cuerpo mientras te mantiene satisfecho y energizado durante horas."
+        },
+        "ORGÁNICO": {
+          titulo: "Compromiso con Ingredientes Orgánicos",
+          contenido: "Utilizamos quinoa orgánica certificada cultivada sin pesticidas sintéticos en los valles andinos, respetando las técnicas ancestrales de cultivo. Los huevos provienen de gallinas criadas en libertad con alimentación orgánica. El aguacate es de agricultura sostenible sin químicos dañinos. Al elegir orgánico, no solo proteges tu salud eliminando residuos tóxicos, sino que también apoyas prácticas agrícolas que cuidan el suelo, el agua y la biodiversidad. Cada bocado es un voto por un planeta más saludable y un cuerpo libre de contaminantes."
+        },
+        "NUTRITIVO": {
+          titulo: "Perfil Nutricional Completo y Balanceado",
+          contenido: "Este bowl es un ejemplo perfecto de nutrición balanceada: 30% proteínas de alta calidad (quinoa, huevos, salmón), 40% carbohidratos complejos de liberación lenta (quinoa), y 30% grasas saludables (aguacate, omega-3). Además, aporta vitaminas del complejo B para energía, vitamina E antioxidante, hierro para prevenir anemia, magnesio para músculos y huesos, y potasio para la función celular. Con un índice glucémico bajo, no produce picos de azúcar, manteniéndote saciado y enfocado. Es nutrición inteligente que alimenta tu rendimiento físico y mental."
+        }
+      },
+      calorias: {
+        titulo: "Información Calórica Detallada - 350-450 CAL",
+        contenido: "El rango de 350-450 calorías está calculado para una porción generosa que funciona como comida principal. La quinoa aporta ~180 cal de carbohidratos energéticos, los huevos ~140 cal de proteína de alta biodisponibilidad, el salmón ~80 cal con omega-3, y el aguacate ~100 cal de grasas cardioprotectoras. Estas son calorías 'limpias' y funcionales, no vacías como las de alimentos procesados. Cada caloría trabaja para nutrir tus células, reparar tejidos, producir hormonas y mantener tu metabolismo activo. Perfecto para control de peso sin pasar hambre, ya que la combinación de proteína, fibra y grasas saludables genera saciedad prolongada de 4-6 horas."
+      },
+      tiempo: {
+        titulo: "Desglose del Tiempo de Preparación - 40 minutos",
+        contenido: "Los 40 minutos totales se dividen así: 5 min para lavar y preparar ingredientes, 15 min para cocinar la quinoa (mientras tanto puedes hacer otras cosas), 10 min para preparar los huevos poché (la técnica más delicada), 5 min para saltear y ensamblar el plato, y 5 min para el emplatado final. Es un tiempo razonable para un desayuno de fin de semana o un almuerzo entre semana cuando trabajas desde casa. Una vez que domines la técnica del huevo poché, podrás reducir el tiempo. Puedes preparar la quinoa con anticipación y guardarla refrigerada hasta 3 días, reduciendo el tiempo a solo 15 minutos. ¡Mira nuestro video tutorial para dominar la técnica perfecta del huevo poché!",
+        videoYoutube: "VhHtk-P87vI"  // Video tutorial de huevo poché
+      }
+    }
   },
+
   {
     id: 2,
     numero: "2",
@@ -213,8 +241,36 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["salmón", "pescado", "omega-3", "espárragos", "horno", "saludable", "proteína"]
+    palabrasClave: ["salmón", "pescado", "omega-3", "espárragos", "horno", "saludable", "proteína"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "PROTEÍNA": {
+          titulo: "Proteína de Alta Calidad del Salmón",
+          contenido: "El salmón es una de las mejores fuentes de proteína animal, proporcionando aproximadamente 25 gramos de proteína completa por cada 100g. Contiene todos los aminoácidos esenciales en las proporciones perfectas que tu cuerpo necesita para construir y reparar tejidos, músculos, piel, cabello y uñas. A diferencia de las carnes rojas, la proteína del salmón viene acompañada de grasas saludables omega-3, no de grasas saturadas. Esta combinación única acelera la recuperación muscular después del ejercicio, mantiene la saciedad prolongada previniendo antojos, y apoya la producción de enzimas y hormonas vitales. Ideal para deportistas, personas activas, o cualquiera que busque mantener masa muscular magra mientras envejece."
+        },
+        "OMEGA-3": {
+          titulo: "Omega-3: El Superpoder del Salmón",
+          contenido: "El salmón es la fuente natural más rica en ácidos grasos omega-3 EPA y DHA, proporcionando hasta 2,500 mg por porción. Estos ácidos grasos esenciales son 'esenciales' porque tu cuerpo no puede producirlos, debes obtenerlos de la dieta. El EPA reduce la inflamación sistémica asociada con enfermedades crónicas, artritis y dolor. El DHA constituye el 40% de las grasas del cerebro y es fundamental para la memoria, concentración, y prevención de depresión. Además, los omega-3 protegen el corazón reduciendo triglicéridos, mejorando el perfil de colesterol, y previniendo arritmias. Estudios muestran que consumir salmón 2-3 veces por semana reduce el riesgo de infarto en un 30%. Es medicina natural en forma de alimento delicioso."
+        },
+        "BAJO EN CARBOHIDRATOS": {
+          titulo: "Perfecto para Dietas Bajas en Carbohidratos",
+          contenido: "Esta receta contiene menos de 10g de carbohidratos totales, siendo ideal para dietas cetogénicas, low-carb, o para cualquiera que busque controlar sus niveles de azúcar en sangre. El salmón y los espárragos son naturalmente bajos en carbohidratos pero altos en nutrientes, permitiéndote mantenerte en cetosis o simplemente evitar picos de insulina. Los carbohidratos que sí contiene provienen exclusivamente de los espárragos, que son fibra saludable que no eleva la glucosa. Al eliminar los carbohidratos refinados, tu cuerpo quema grasa como combustible, lo que resulta en mayor claridad mental, energía estable sin crashes, y pérdida de grasa corporal sin perder músculo. Además, la ausencia de carbohidratos pesados evita la inflamación y la hinchazón post-comida, dejándote ligero y energizado."
+        }
+      },
+      calorias: {
+        titulo: "Desglose Calórico - 400-500 CAL",
+        contenido: "El rango de 400-500 calorías por porción de 2 personas se distribuye así: El salmón (150g) aporta aproximadamente 280 calorías, ricas en proteína (25g) y grasas omega-3 (15g). Los espárragos (150g por persona) añaden solo 30 calorías pero con 4g de fibra que mejora la digestión. El aceite de oliva (1.5 cucharadas) contribuye 180 calorías de grasas monoinsaturadas cardioprotectoras. Las calorías restantes provienen de condimentos y hierbas que añaden sabor sin peso calórico significativo. Esta es una comida nutricionalmente densa pero calóricamente moderada, perfecta para pérdida de peso o mantenimiento. La alta proporción de proteína y grasa saludable genera saciedad extrema, evitando que necesites snacks entre comidas. Es el tipo de comida que te deja satisfecho con menos calorías que opciones menos nutritivas."
+      },
+      tiempo: {
+        titulo: "Preparación Rápida - Solo 30 Minutos",
+        contenido: "Este plato se completa en apenas 30 minutos totales: 10 minutos de preparación activa (lavar espárragos, sazonar salmón, cortar limón y ajo) y 20 minutos de cocción en el horno mientras puedes atender otras tareas. Lo que hace esta receta excepcionalmente práctica es que todo se cocina en una sola bandeja, eliminando múltiples ollas y sartenes. Durante la cocción, puedes preparar una ensalada, poner la mesa, o simplemente relajarte. No requiere habilidades culinarias avanzadas ni técnicas complicadas. Es la solución perfecta para cenas entre semana cuando llegas cansado pero no quieres sacrificar la nutrición por comida rápida. Una vez que pruebes lo fácil que es, se convertirá en tu go-to para comidas elegantes pero sin estrés. ¡Mira nuestro video para ver lo simple que es!",
+        videoYoutube: "xqvTZElFWUA"  // Video de salmón al horno
+      }
+    }
   },
+
   {
     id: 3,
     numero: "3",
@@ -324,8 +380,40 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["smoothie", "détox", "verde", "vegano", "desayuno", "energético", "saludable"]
+    palabrasClave: ["smoothie", "détox", "verde", "vegano", "desayuno", "energético", "saludable"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "DÉTOX": {
+          titulo: "Propiedades Détox y Limpieza Profunda",
+          contenido: "Este smoothie verde es una potente bebida desintoxicante gracias a su alto contenido de clorofila, el pigmento que da color verde a las plantas. La clorofila tiene una estructura molecular similar a la hemoglobina humana y ayuda a oxigenar la sangre, eliminar metales pesados, y limpiar el hígado de toxinas acumuladas por medicamentos, alcohol, o alimentos procesados. Las espinacas y el kale contienen glucosinolatos que activan enzimas hepáticas de fase 2, responsables de neutralizar y expulsar sustancias tóxicas. El limón estimula la producción de bilis para mejor digestión de grasas, mientras que el jengibre acelera el metabolismo y tiene propiedades antiinflamatorias. Beber este smoothie en ayunas potencia la limpieza, pero también funciona en cualquier momento para un reset nutricional. Es como darle a tu cuerpo un baño interno."
+        },
+        "VEGANO": {
+          titulo: "100% Vegano y Plant-Based",
+          contenido: "Este smoothie es completamente libre de ingredientes de origen animal, haciéndolo perfecto para veganos, vegetarianos, o cualquiera que busque reducir su consumo de productos animales. Todos los nutrientes provienen de fuentes vegetales: las hojas verdes aportan hierro, calcio y proteína vegetal; el plátano ofrece potasio y vitamina B6; la manzana contribuye antioxidantes y pectina; el agua de coco proporciona electrolitos naturales; y las semillas de chía añaden omega-3 y proteína completa. No contiene lácteos, miel, ni ningún derivado animal, pero está repleto de vitaminas, minerales, fitonutrientes y antioxidantes. Es la prueba de que la nutrición plant-based puede ser deliciosa, satisfactoria y nutricionalmente completa. Además, es más sostenible para el planeta, reduciendo la huella de carbono comparado con batidos con lácteos."
+        },
+        "ENERGÉTICO": {
+          titulo: "Energía Natural Sin Crash",
+          contenido: "A diferencia del café o bebidas energéticas que te dan un pico de energía seguido de un crash, este smoothie proporciona energía limpia y sostenida que dura horas. Los carbohidratos naturales del plátano y la manzana se liberan gradualmente gracias a la fibra de las hojas verdes, manteniendo tus niveles de glucosa estables. Las vitaminas del complejo B de las espinacas y el kale son cofactores esenciales para la producción de ATP (la moneda energética celular). El hierro previene la fatiga relacionada con anemia, y el agua de coco repone electrolitos perdidos que pueden causar cansancio. Además, la hidratación adecuada y los antioxidantes combaten el estrés oxidativo que agota tu energía. Es perfecto para comenzar el día, como pre-workout, o para un boost a media tarde sin alterar tu sueño nocturno."
+        },
+        "RÁPIDO": {
+          titulo: "Listo en Solo 5 Minutos",
+          contenido: "En nuestra vida acelerada, la nutrición no debería ser complicada, y este smoothie lo prueba. En apenas 5 minutos puedes preparar una comida nutricionalmente completa: 2 minutos para lavar y picar ingredientes, 2 minutos para licuar, y 1 minuto para servir. No requiere cocción, no ensucia múltiples ollas, y puedes beberlo en movimiento. Es la solución perfecta para mañanas ajetreadas cuando no tienes tiempo para un desayuno sentado, pero no quieres recurrir a opciones poco saludables. Puedes incluso preparar los ingredientes la noche anterior (excepto licuar) para reducir el tiempo matutino. Además, si usas una licuadora portátil tipo BlendJet, puedes prepararlo directamente en la oficina o en el gym. La limpieza también es rápida: solo enjuaga la licuadora con agua y jabón. Nutrición óptima sin excusas de tiempo."
+        }
+      },
+      calorias: {
+        titulo: "Calorías Ligeras pero Nutritivas - 200-250 CAL",
+        contenido: "Con solo 200-250 calorías, este smoothie es increíblemente ligero pero sorprendentemente saciante y nutritivo. La mayoría de las calorías provienen del plátano (~100 cal) que aporta carbohidratos energéticos y potasio, y la manzana (~50 cal) con fibra soluble que mejora la saciedad. Las hojas verdes (espinacas y kale) apenas suman 20 calorías pero están cargadas de vitaminas A, C, K, hierro, calcio y antioxidantes. El agua de coco añade 45 calorías con electrolitos naturales, y las semillas de chía contribuyen 60 calorías con omega-3, proteína y fibra que se expande en tu estómago. Es perfecto para desayuno ligero, snack entre comidas, o post-entrenamiento para recuperación sin exceso calórico. A pesar de su bajo contenido calórico, te mantiene satisfecho gracias a la fibra y el alto contenido de agua. Ideal para pérdida de peso sin pasar hambre."
+      },
+      tiempo: {
+        titulo: "Preparación Express - 5 Minutos Totales",
+        contenido: "Este smoothie es la definición de comida rápida saludable. Los 5 minutos se desglosan así: 1 minuto para sacar ingredientes del refrigerador, 2 minutos para lavar y picar (las hojas verdes, la manzana y el plátano), 1-2 minutos para licuar (dependiendo de la potencia de tu licuadora), y 30 segundos para servir y decorar. No hay cocción involucrada, cero tiempo de horno, cero tiempos de espera. Es incluso más rápido que preparar café. Si congelas el plátano con anticipación y pre-lavas las hojas verdes el fin de semana, puedes reducir el tiempo a literalmente 2 minutos. Es perfecto para cuando tienes que salir corriendo de casa, necesitas algo nutritivo entre juntas, o quieres un snack saludable al instante. La eficiencia no significa sacrificar nutrición. ¡Ve nuestro video tutorial para ver lo fácil que es!",
+        videoYoutube: "ub2dh29JQyE"  // Video de smoothie verde
+      }
+    }
   },
+
   {
     id: 4,
     numero: "4",
@@ -431,8 +519,40 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["batata", "sin gluten", "aguacate", "vegano", "tostada", "paleo", "desayuno"]
+    palabrasClave: ["batata", "sin gluten", "aguacate", "vegano", "tostada", "paleo", "desayuno"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "SIN GLUTEN": {
+          titulo: "Libre de Gluten de Forma Natural",
+          contenido: "Esta tostada de batata es la solución perfecta para personas con enfermedad celíaca, sensibilidad al gluten no celíaca, o simplemente quienes eligen evitar el gluten por salud. A diferencia del pan sin gluten comercial que suele estar lleno de almidones refinados y aditivos, esta alternativa usa batata entera y natural que nunca ha contenido gluten. La batata proporciona carbohidratos complejos con fibra, vitaminas y minerales que el pan sin gluten procesado no puede igualar. No hay riesgo de contaminación cruzada como en productos manufacturados. Además, evitas los picos de azúcar en sangre causados por harinas refinadas. Es creatividad culinaria que transforma un tubérculo humilde en un vehículo delicioso para tus toppings favoritos, sin comprometer sabor, textura ni nutrición. La batata horneada queda firme como una tostada tradicional pero con un dulzor natural que complementa perfectamente el aguacate cremoso."
+        },
+        "VEGANO": {
+          titulo: "100% Vegano y Plant-Based",
+          contenido: "Esta receta es completamente libre de productos animales, perfecta para veganos estrictos o flexitarianos que buscan opciones plant-based deliciosas. La batata proporciona carbohidratos energéticos y fibra; el aguacate aporta grasas saludables y cremosidad sin necesidad de mantequilla o queso; las semillas de chía contribuyen omega-3 y proteína; y todos los condimentos son de origen vegetal. No sacrificas sabor, textura ni saciedad al eliminar productos animales. De hecho, esta combinación vegetal es más nutritiva que una tostada convencional con mantequilla. Obtienes vitamina A de la batata, vitamina E del aguacate, omega-3 de la chía, sin colesterol ni grasas saturadas. Además, es una opción más sostenible para el planeta, reduciendo significativamente la huella de carbono y el uso de agua comparado con productos animales. Es veganismo delicioso sin sentir que renuncias a nada."
+        },
+        "CREATIVO": {
+          titulo: "Innovación Culinaria Saludable",
+          contenido: "Esta tostada de batata representa una revolución creativa en la cocina saludable. En lugar de aceptar el pan procesado como la única opción para tostadas, reinventamos el concepto usando un vegetal entero como base. Es el tipo de creatividad que transforma ingredientes simples en algo extraordinario y nutritivo. La idea surgió del movimiento 'vegetales como vehículo' que incluye también calabacín como pasta, coliflor como arroz, y portobello como hamburguesa. Esta mentalidad creativa te libera de productos procesados y abre un mundo de posibilidades culinarias. La batata horneada funciona perfectamente: es robusta para sostener toppings, naturalmente dulce para contrastar sabores salados, y visualmente impresionante con su color naranja vibrante. Es el tipo de plato que sorprende en brunch, impresiona en Instagram, y satisface tu paladar mientras nutre tu cuerpo. Cocinar creativamente significa nunca aburrirse de comer saludable."
+        },
+        "PALEO": {
+          titulo: "Compatible con la Dieta Paleo",
+          contenido: "Esta receta sigue perfectamente los principios de la dieta paleolítica, basada en cómo comían nuestros ancestros cazadores-recolectores antes de la agricultura. Los ingredientes son alimentos enteros y naturales que existían en la era paleolítica: tubérculos (batata), frutas (aguacate técnicamente es una fruta), semillas (chía), aceite de oliva prensado en frío, y especias. No contiene granos (sin trigo, sin gluten), no hay lácteos, no hay legumbres, y definitivamente no hay alimentos procesados o azúcares añadidos. La dieta paleo se enfoca en alimentos densos en nutrientes que nuestros genes están adaptados a digerir óptimamente. La batata es un carbohidrato paleo-aprobado rico en betacarotenos y fibra. El aguacate proporciona grasas saludables similares a las que obtendrían de nueces y semillas. Esta combinación apoya la función metabólica óptima, reduce la inflamación, y proporciona energía sostenida sin los efectos negativos de granos y lácteos. Es como comer en la era paleolítica pero con sabor del siglo XXI."
+        }
+      },
+      calorias: {
+        titulo: "Contenido Calórico Moderado - 280-350 CAL",
+        contenido: "Con 280-350 calorías por porción (2 tostadas), este plato ofrece un balance perfecto entre saciedad y control calórico. La batata (200g) aporta aproximadamente 180 calorías de carbohidratos complejos con alto contenido de fibra que te mantiene lleno. El aguacate (medio) contribuye 120 calorías de grasas monoinsaturadas cardioprotectoras que mejoran la absorción de vitaminas liposolubles. Las semillas de chía añaden 60 calorías con omega-3 y fibra que se expande en tu estómago. El aceite de oliva y condimentos suman 50 calorías más. Estas son calorías de calidad, no vacías: cada una viene acompañada de vitaminas, minerales, fibra y fitonutrientes. La combinación de fibra, grasas saludables y carbohidratos complejos genera una saciedad prolongada de 3-4 horas, evitando antojos. Es perfecto para desayuno o almuerzo ligero que te mantiene energizado sin pesadez. Ideal para control de peso sin pasar hambre."
+      },
+      tiempo: {
+        titulo: "Tiempo de Preparación - 30 Minutos",
+        contenido: "Los 30 minutos totales se desglosan en 5 minutos de preparación activa y 25 minutos de horneado pasivo. Durante la preparación activa, lavas y cortas la batata en rodajas uniformes (2 min), la sazonas y colocas en la bandeja (1 min), y preparas el puré de aguacate (2 min). Los 25 minutos de horneado son tiempo pasivo donde puedes ducharte, vestirte, preparar café, o atender otras tareas matutinas. Es importante voltear las batatas a mitad de cocción (12-13 minutos) para asegurar que se doren uniformemente. Una vez horneadas, el montaje final toma solo 2 minutos: untar aguacate, espolvorear chía, añadir pimentón y hierbas. Puedes preparar las rodajas de batata horneadas con anticipación (duran 3 días refrigeradas) y simplemente calentarlas y añadir toppings frescos, reduciendo el tiempo a 10 minutos. Es inversión mínima de tiempo para máximo retorno nutricional. ¡Mira el video tutorial!",
+        videoYoutube: "J8J5AUSX6oQ"  // Video de tostada de batata
+      }
+    }
   },
+
   {
     id: 5,
     numero: "5",
@@ -542,8 +662,40 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["ensalada", "mediterránea", "griega", "vegetariana", "feta", "aceitunas", "fresca"]
+    palabrasClave: ["ensalada", "mediterránea", "griega", "vegetariana", "feta", "aceitunas", "fresca"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "MEDITERRÁNEA": {
+          titulo: "La Dieta Mediterránea: Patrimonio de la Humanidad",
+          contenido: "Esta ensalada encarna los principios de la dieta mediterránea, declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO en 2013. No es solo una forma de comer, es un estilo de vida milenario de Grecia, Italia, España y otros países del Mediterráneo que ha demostrado ser una de las dietas más saludables del planeta. Se basa en aceite de oliva como grasa principal (en lugar de mantequilla), abundancia de vegetales frescos, consumo moderado de lácteos fermentados (como feta), y uso generoso de hierbas aromáticas. Estudios científicos demuestran que seguir la dieta mediterránea reduce el riesgo de enfermedad cardíaca en 30%, diabetes tipo 2 en 23%, y mejora la longevidad. Las poblaciones mediterráneas tienen menos obesidad, menos cáncer, y mejor salud cerebral en la vejez. Esta ensalada es medicina preventiva en un plato, con sabores que celebran la vida."
+        },
+        "FRESCA": {
+          titulo: "Ingredientes Frescos de Temporada",
+          contenido: "La frescura es fundamental en esta ensalada. Utilizamos vegetales de temporada en su pico de madurez y sabor: tomates cherry reventando de dulzura natural, pepinos crujientes y hidratantes, pimientos rojos llenos de vitamina C, y hojas verdes recién cosechadas que aún tienen vida en ellas. Los productos frescos contienen significativamente más nutrientes que los almacenados por semanas: las vitaminas como la C se degradan con el tiempo, los antioxidantes disminuyen, y los fitonutrientes se pierden. Además, el sabor es incomparable: un tomate maduro de mercado local sabe completamente diferente a uno refrigerado por días. La frescura también garantiza textura óptima: vegetales crujientes y vibrantes, no marchitos o blandos. Al elegir productos frescos, también apoyas la agricultura local y reduces la huella de carbono del transporte. Frescura es sinónimo de máxima nutrición, máximo sabor, máxima vitalidad."
+        },
+        "VEGETARIANA": {
+          titulo: "Opción Vegetariana Completa",
+          contenido: "Esta ensalada es completamente vegetariana, perfecta para vegetarianos ovo-lacto o cualquiera que busque reducir su consumo de carne. El queso feta proporciona proteína de alta calidad (8g por cada 50g), calcio para huesos fuertes, y probióticos beneficiosos de la fermentación. Las aceitunas aportan grasas saludables y antioxidantes únicos. Los vegetales diversos ofrecen un espectro completo de vitaminas, minerales y fitonutrientes. Es una comida nutricionalmente completa sin necesidad de carne: tienes proteína del queso, carbohidratos complejos de los vegetales, grasas saludables del aceite de oliva y aceitunas, y fibra abundante que mejora la digestión. Además, obtiene hierro de las hojas verdes, vitamina C de los tomates y pimientos (que mejora la absorción del hierro), y vitamina K para la coagulación. Es la prueba de que puedes estar perfectamente nutrido sin productos animales de músculo."
+        },
+        "RÁPIDA": {
+          titulo: "Lista en 15 Minutos",
+          contenido: "En apenas 15 minutos puedes tener esta ensalada mediterránea completa en la mesa, haciéndola perfecta para comidas entre semana cuando el tiempo es limitado. Los 15 minutos se dividen así: 3 minutos para lavar y secar las hojas verdes, 5 minutos para picar todos los vegetales (tomates, pepino, pimiento, cebolla), 2 minutos para preparar el aderezo en un frasco, 3 minutos para ensamblar todo en un bowl, y 2 minutos para servir y disfrutar. No hay cocción involucrada, cero tiempo de espera, cero técnicas complicadas. Es más rápido que ordenar comida a domicilio y infinitamente más saludable. Puedes pre-picar los vegetales la noche anterior y guardarlos en contenedores separados, reduciendo el tiempo matutino o del almuerzo a literalmente 5 minutos. Es la solución perfecta cuando llegas hambriento de trabajar pero no quieres recurrir a comida chatarra. Rapidez no significa sacrificar nutrición o sabor."
+        }
+      },
+      calorias: {
+        titulo: "Contenido Calórico - 320-400 CAL",
+        contenido: "El rango de 320-400 calorías por porción (para 2 personas) está perfectamente equilibrado para una comida principal ligera o una cena satisfactoria. La distribución calórica es inteligente: los vegetales (hojas, tomates, pepino, pimiento) aportan solo 80 calorías pero volumen masivo que llena tu estómago. El queso feta (75g) contribuye 200 calorías con proteína saciante y calcio. Las aceitunas kalamata añaden 60 calorías de grasas monoinsaturadas antiinflamatorias. El aceite de oliva del aderezo (2 cucharadas) suma 240 calorías de grasas cardioprotectoras que mejoran la absorción de vitaminas liposolubles A, D, E, K. Aunque el aceite parece alto en calorías, estudios muestran que las grasas del aceite de oliva extra virgen aumentan la saciedad y el metabolismo, evitando que comas en exceso después. Es perfecto para pérdida de peso porque la fibra abundante y las grasas saludables te mantienen satisfecho con relativamente pocas calorías."
+      },
+      tiempo: {
+        titulo: "Preparación Rápida - 15 Minutos",
+        contenido: "Esta ensalada demuestra que comer saludable no tiene que consumir tu tiempo. Los 15 minutos totales no involucran cocción, solo preparación fresca. Puedes hacerla aún más rápida con estos trucos: compra hojas verdes pre-lavadas (ahorra 5 min), usa vegetales pre-cortados del supermercado (ahorra 3 min), prepara el aderezo en lotes grandes los domingos y guárdalo refrigerado (ahorra 2 min). Con estas optimizaciones, puedes tener la ensalada lista en literalmente 5 minutos. Es más rápido que hacer un sándwich y 100 veces más nutritivo. Perfecta para preparar a última hora cuando no planificaste la comida, cuando llegas tarde del trabajo, o cuando recibes visitas inesperadas. La belleza de esta ensalada es que siempre puedes tener los ingredientes base en tu refrigerador (duran una semana) listos para ser ensamblados al instante. ¡Mira nuestro video de preparación express!",
+        videoYoutube: "PfDaQqh5oXA"  // Video de ensalada mediterránea
+      }
+    }
   },
+
   {
     id: 6,
     numero: "6",
@@ -662,8 +814,40 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["buddha bowl", "vegano", "tofu", "arroz integral", "edamame", "tahini", "proteico"]
+    palabrasClave: ["buddha bowl", "vegano", "tofu", "arroz integral", "edamame", "tahini", "proteico"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "VEGANO": {
+          titulo: "100% Vegano y Nutricionalmente Completo",
+          contenido: "Este Buddha Bowl es la respuesta perfecta a quien dice que 'los veganos no obtienen suficiente proteína o nutrientes'. Cada componente fue seleccionado estratégicamente para proporcionar una nutrición completa sin productos animales. El tofu (soja fermentada) ofrece los 9 aminoácidos esenciales que tu cuerpo no puede producir. El edamame (soja verde) añade más proteína completa, fibra y isoflavonas que benefician la salud hormonal. El arroz integral proporciona energía de liberación lenta y vitaminas del complejo B. El tahini (pasta de sésamo) aporta calcio, hierro, zinc y grasas saludables. Los vegetales coloridos ofrecen un arcoíris de antioxidantes, vitaminas y minerales. No hay colesterol, no hay grasas saturadas dañinas, no hay hormonas ni antibióticos de animales. Es 100% plant-based pero 200% delicioso y nutritivo. Además, es más sostenible, usando 90% menos agua y generando 90% menos gases de efecto invernadero que una comida equivalente con carne."
+        },
+        "PROTEICO": {
+          titulo: "Alto en Proteína Vegetal de Calidad",
+          contenido: "Este bowl proporciona aproximadamente 25-30 gramos de proteína completa por porción, equivalente a una pechuga de pollo pequeña pero sin grasas saturadas ni colesterol. El tofu (200g) aporta 16g de proteína con todos los aminoácidos esenciales, siendo una de las pocas fuentes vegetales de proteína completa. El edamame (1 taza) añade 18g más de proteína, convirtiéndolo en un snack proteico por sí solo. El tahini contribuye 5g de proteína junto con calcio y hierro. El arroz integral, aunque principalmente carbohidrato, suma 5g adicionales de proteína. La combinación de estas fuentes asegura que obtienes no solo cantidad, sino calidad de proteína con alto valor biológico. Es perfecto para deportistas veganos, personas en construcción muscular, o cualquiera que busque proteína sin carne. La proteína vegetal además viene con fibra que mejora la saciedad y la salud digestiva, algo que la proteína animal no ofrece."
+        },
+        "COMPLETO": {
+          titulo: "Comida Nutricionalmente Completa",
+          contenido: "Este Buddha Bowl es el ejemplo perfecto de una comida balanceada que incluye todos los macronutrientes y micronutrientes esenciales en proporciones ideales. PROTEÍNAS (25-30g): tofu y edamame proporcionan aminoácidos esenciales para reparación muscular. CARBOHIDRATOS COMPLEJOS (45-50g): arroz integral ofrece energía sostenida sin picos de glucosa. GRASAS SALUDABLES (20-25g): aguacate, tahini y aceite de sésamo aportan omega-3, omega-6 y grasas monoinsaturadas para salud cardiovascular y cerebral. FIBRA (12-15g): vegetales crudos y arroz integral mejoran la digestión. VITAMINAS Y MINERALES: obtienes vitamina A (zanahoria), vitamina C (col morada), vitamina K (vegetales verdes), calcio (tahini, tofu), hierro (edamame, tahini), magnesio, potasio, zinc. No necesitas complementar con nada más. Es una comida completa en un solo bowl que nutre cada célula de tu cuerpo."
+        },
+        "COLORIDO": {
+          titulo: "Come el Arcoíris para Máxima Salud",
+          contenido: "Los colores vibrantes de este bowl no son solo estética, son indicadores visuales de nutrición diversa. Cada color representa diferentes familias de fitonutrientes con beneficios únicos: NARANJA (zanahoria): betacarotenos para salud visual y piel. MORADO (col morada): antocianinas que combaten inflamación y protegen el cerebro. VERDE (edamame, pepino): clorofila para desintoxicación y folato para producción de células. BLANCO/BEIGE (tofu, arroz, tahini): flavonoides para salud cardiovascular. ROJO/ROSADO (rábanos): antioxidantes que estimulan el sistema inmune. AMARILLO (semillas de sésamo): lignanos con propiedades anticancerígenas. La ciencia nutricional demuestra que comer un espectro amplio de colores asegura que obtienes una variedad completa de antioxidantes, vitaminas y minerales. Es como un seguro de salud en forma de alimento. Cuantos más colores, más protección contra enfermedades crónicas, envejecimiento y estrés oxidativo. Este bowl es medicina preventiva que celebra la belleza natural de los alimentos vegetales."
+        }
+      },
+      calorias: {
+        titulo: "Contenido Calórico Sustancial - 450-550 CAL",
+        contenido: "El rango de 450-550 calorías hace de este Buddha Bowl una comida principal completa y satisfactoria que te mantiene energizado durante 5-6 horas. La distribución calórica es inteligentemente balanceada: el arroz integral (1/2 taza cocida) aporta 110 calorías de carbohidratos complejos que liberan energía gradualmente. El tofu (200g) contribuye 160 calorías con 16g de proteína saciante. El edamame (1 taza) añade 190 calorías más con 18g de proteína adicional. El aguacate (1/2) suma 120 calorías de grasas monoinsaturadas que mejoran la absorción de vitaminas. El tahini (3 cucharadas) agrega 180 calorías de grasas saludables y calcio. Los vegetales crudos suman solo 50 calorías pero volumen masivo. Estas son calorías densas en nutrientes, no vacías como comida procesada. Cada caloría viene acompañada de proteína, fibra, vitaminas o minerales. Es perfecto para mantener peso saludable porque la combinación de proteína, fibra y grasas genera saciedad extrema, evitando antojos y snacking innecesario. Nutrición máxima, hambre mínima."
+      },
+      tiempo: {
+        titulo: "Tiempo de Preparación - 45 Minutos",
+        contenido: "Los 45 minutos totales pueden parecer largos, pero gran parte es tiempo pasivo de cocción. Desglose: 25-30 minutos para cocinar el arroz integral (tiempo pasivo, puedes hacer otras cosas), 10 minutos para marinar el tofu (también pasivo), 5-7 minutos para cocinar el tofu en la sartén (supervisión mínima), 10 minutos para picar todos los vegetales, 2 minutos para preparar la salsa de tahini, y 3 minutos para ensamblar el bowl. La belleza de este plato es que puedes preparar componentes con anticipación: cocina el arroz integral el domingo y guárdalo refrigerado hasta 5 días, marina y cocina el tofu con anticipación (dura 4 días), y pre-corta los vegetales (duran 2-3 días en contenedores herméticos). Con meal prep, puedes reducir el tiempo de ensamblaje a literalmente 5 minutos: sacar ingredientes del refrigerador, calentar arroz y tofu 1 minuto en microondas, ensamblar y comer. Es inversión inteligente de tiempo para comidas nutritivas toda la semana. ¡Mira nuestro video de meal prep!",
+        videoYoutube: "wN0Gl5MJTY0"  // Video de Buddha Bowl
+      }
+    }
   },
+
   {
     id: 7,
     numero: "7",
@@ -787,8 +971,40 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["wrap", "pollo", "hummus", "integral", "portátil", "almuerzo", "rápido"]
+    palabrasClave: ["wrap", "pollo", "hummus", "integral", "portátil", "almuerzo", "rápido"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "PROTEICO": {
+          titulo: "Alto Contenido Proteico - 35-40g por Porción",
+          contenido: "Este wrap es una bomba proteica diseñada para quienes necesitan mantener o construir masa muscular, recuperarse después del ejercicio, o simplemente mantenerse saciados por horas. La pechuga de pollo (150g) aporta 35g de proteína magra de alto valor biológico con todos los aminoácidos esenciales. El hummus de garbanzos añade 8g más de proteína vegetal junto con fibra que mejora la absorción. La tortilla integral contribuye 6g adicionales. En total, obtienes 45-50g de proteína por wrap completo, equivalente a 1.5 pechugas de pollo pequeñas. Esta cantidad es perfecta para una comida post-entrenamiento que maximiza la síntesis proteica muscular, o para un almuerzo que te mantiene lleno hasta la cena sin necesidad de snacks. La proteína también tiene el mayor efecto térmico de todos los macronutrientes, lo que significa que tu cuerpo quema más calorías digiriéndola. Es nutrición estratégica para atletas, personas activas, o cualquiera en programa de pérdida de peso que quiere mantener músculo."
+        },
+        "PORTÁTIL": {
+          titulo: "La Comida Portátil Perfecta",
+          contenido: "Este wrap fue diseñado pensando en movilidad y conveniencia sin sacrificar nutrición. Su formato enrollado y autocontenido lo hace perfecto para comer con una mano mientras conduces, caminas o trabajas. No necesita cubiertos, platos ni mantel. Envuélvelo en papel aluminio o pergamino y se mantiene intacto durante horas sin refrigeración inmediata (aunque es mejor refrigerarlo si pasarán más de 3-4 horas). Cabe perfectamente en loncheras, mochilas, bolsos o portafolio. Es la solución ideal para profesionales ocupados, estudiantes con horarios apretados, padres con niños activos, o aventureros que necesitan comidas en movimiento. A diferencia de las opciones de comida rápida que encuentras en la calle (hamburguesas, pizza), este wrap proporciona proteína de calidad, vegetales frescos, carbohidratos complejos y grasas saludables. Es fast food saludable hecho en casa. Prepara varios el domingo para tener almuerzos nutritivos listos toda la semana."
+        },
+        "RÁPIDO": {
+          titulo: "Listo en Solo 25 Minutos",
+          contenido: "Con apenas 25 minutos de principio a fin, este wrap demuestra que comer saludable no tiene que ser complicado ni consumir tu tiempo. Desglose del tiempo: 5 minutos para hacer el hummus en procesadora (o usa comprado para ahorrar tiempo), 7 minutos para cocinar el pollo a la parrilla (mientras tanto puedes picar vegetales), 5 minutos para picar todos los vegetales frescos, 5 minutos para ensamblar ambos wraps, y 3 minutos para limpiar. Es más rápido que ordenar delivery y esperar, más económico que comprar lunch fuera, e infinitamente más saludable que opciones de comida rápida. Con estrategias de meal prep, puedes reducir el tiempo dramáticamente: cocina varios pechugas de pollo el domingo (duran 4 días), prepara hummus en lote grande (dura 1 semana), y pre-corta vegetales (duran 2-3 días). Con estos componentes listos, ensamblar un wrap toma literalmente 3 minutos. Es la respuesta a 'no tengo tiempo para cocinar saludable'."
+        },
+        "COMPLETO": {
+          titulo: "Comida Nutricionalmente Completa",
+          contenido: "Este wrap no es solo un snack, es una comida completa y balanceada que proporciona todos los macronutrientes y micronutrientes esenciales en un solo paquete conveniente. PROTEÍNA (35-40g): pollo magro y hummus de garbanzos proveen aminoácidos para reparación muscular y saciedad prolongada. CARBOHIDRATOS COMPLEJOS (40-45g): tortilla integral ofrece energía sostenida con bajo índice glucémico, sin causar picos de azúcar. GRASAS SALUDABLES (12-15g): tahini del hummus y aceite de oliva aportan grasas monoinsaturadas para salud cardiovascular y absorción de vitaminas. FIBRA (10-12g): garbanzos, tortilla integral y vegetales crudos mejoran digestión y microbioma intestinal. VITAMINAS Y MINERALES: vitamina A (zanahoria), vitamina C (tomate, lechuga), vitamina K, hierro, calcio, magnesio, potasio. No necesitas acompañarlo con nada más. Es autosuficiente nutricionalmente. Una comida que te mantiene energizado, satisfecho y nutrido durante 4-5 horas sin crashes ni antojos."
+        }
+      },
+      calorias: {
+        titulo: "Contenido Calórico Moderado - 380-450 CAL",
+        contenido: "El rango de 380-450 calorías por wrap lo convierte en una opción perfecta para control de peso sin pasar hambre. La distribución calórica es inteligente: la pechuga de pollo (150g) aporta 165 calorías de proteína pura con casi cero grasa. La tortilla integral (una grande) contribuye 180 calorías de carbohidratos complejos con fibra. El hummus (3-4 cucharadas) añade 120 calorías de proteína vegetal y grasas saludables del tahini. Los vegetales frescos (lechuga, tomate, pepino, zanahoria, cebolla) suman solo 40 calorías pero volumen masivo que llena tu estómago. A pesar del contenido calórico moderado, este wrap te mantiene increíblemente saciado gracias a los 40g de proteína, 10g de fibra, y grasas saludables que ralentizan la digestión. Es perfecto para dietas de 1,500-2,000 calorías diarias, funcionando como almuerzo principal que previene el picoteo de la tarde. Comparado con un wrap típico de cadena de comida rápida (800-1,200 calorías con grasas trans), este es nutrición superior con la mitad de calorías."
+      },
+      tiempo: {
+        titulo: "Preparación Eficiente - 25 Minutos Totales",
+        contenido: "Los 25 minutos de preparación están optimizados para máxima eficiencia. Así es como funciona el tiempo: Minuto 0-5: mientras precalientas la sartén grill, prepara el hummus en la procesadora (30 segundos activos, 4 minutos procesando). Minuto 5-12: cocina el pollo en la parrilla (7 minutos, voltea una vez). Minuto 7-12: mientras se cocina el pollo, pica todos los vegetales simultáneamente. Minuto 12-14: deja reposar el pollo y córtalo en tiras. Minuto 14-20: ensambla ambos wraps paso a paso. Minuto 20-25: corta, envuelve y guarda o sirve. Con multitasking, aprovechas cada minuto. Para acelerar más: usa pollo precocido (ahorra 12 min), usa hummus comprado (ahorra 5 min), compra vegetales pre-cortados (ahorra 5 min). Con estas optimizaciones, tiempo total: 3 minutos. Es la eficiencia máxima sin sacrificar calidad. ¡Mira nuestro video de preparación rápida!",
+        videoYoutube: "ONvKqt9-kyk"  // Video de wrap de pollo
+      }
+    }
   },
+
   {
     id: 8,
     numero: "8",
@@ -910,6 +1126,37 @@ export const comidas = [
       }
     ],
     
-    palabrasClave: ["açai", "acai", "bowl", "superalimento", "desayuno", "antioxidante", "energético", "granola"]
+    palabrasClave: ["açai", "acai", "bowl", "superalimento", "desayuno", "antioxidante", "energético", "granola"],
+
+    // ==================== INFORMACIÓN DE MODALES ====================
+    infoModales: {
+      etiquetas: {
+        "ANTIOXIDANTE": {
+          titulo: "Poder Antioxidante del Açai",
+          contenido: "El açai es considerado uno de los alimentos con mayor capacidad antioxidante del planeta, midiendo 102,700 en la escala ORAC (Capacidad de Absorción de Radicales de Oxígeno) por cada 100g. Para poner esto en perspectiva, los arándanos miden 4,669 y las fresas 1,540 en la misma escala. Esta potencia antioxidante proviene principalmente de las antocianinas (los pigmentos morados oscuros) que combaten los radicales libres responsables del envejecimiento celular, enfermedades crónicas y estrés oxidativo. Los antioxidantes del açai protegen el ADN del daño, reducen la inflamación sistémica, mejoran la función cerebral y cardiovascular, y previenen el deterioro relacionado con la edad. Las frutas frescas del bowl (fresas, arándanos) añaden más antioxidantes como vitamina C y quercetina. Es literalmente medicina preventiva que sabe a helado. Un bowl de açai proporciona tu dosis diaria completa de antioxidantes, protegiendo cada célula de tu cuerpo contra el envejecimiento y las enfermedades."
+        },
+        "ENERGÉTICO": {
+          titulo: "Energía Limpia y Sostenida",
+          contenido: "Este açai bowl es la alternativa perfecta al café y bebidas energéticas, proporcionando energía natural sin nerviosismo, ansiedad o crash posterior. La energía proviene de múltiples fuentes sinérgicas: los carbohidratos naturales del plátano y las frutas se absorben rápidamente para energía inmediata, la granola aporta carbohidratos complejos de liberación lenta que mantienen los niveles de glucosa estables por horas, y las grasas saludables del açai ralentizan la digestión para energía prolongada. El açai también contiene pequeñas cantidades de cafeína natural (menos que el café) junto con teobromina, proporcionando alerta mental suave sin nerviosismo. Las vitaminas del complejo B de la granola y frutas son cofactores esenciales para la producción de ATP (energía celular). Es perfecto como desayuno pre-ejercicio, snack de media tarde cuando necesitas un boost, o post-entrenamiento para reponer glucógeno muscular. Energía que funciona con tu cuerpo, no contra él."
+        },
+        "DESAYUNO": {
+          titulo: "El Desayuno Perfecto para Empezar el Día",
+          contenido: "Este açai bowl representa la forma ideal de romper el ayuno nocturno y preparar tu cuerpo para un día productivo. A diferencia de desayunos pesados con huevos y tocino que te dejan somnoliento, o desayunos dulces con cereales azucarados que causan crashes, este bowl proporciona energía limpia y sostenida. Los carbohidratos de frutas y granola activan tu metabolismo inmediatamente, las proteínas de la granola y semillas de chía mantienen la saciedad hasta el almuerzo, y los antioxidantes del açai protegen tus células durante todo el día. La fibra (8-10g) mejora la digestión y el tránsito intestinal matutino. Es hidratante gracias al contenido de agua de las frutas frescas. Además, es visualmente atractivo y delicioso, lo que hace que realmente esperes el desayuno en lugar de saltártelo. Establece el tono nutricional para todo el día: cuando comienzas bien, tiendes a elegir mejor durante las comidas restantes."
+        },
+        "SUPERALIMENTO": {
+          titulo: "Açai: El Superalimento Amazónico",
+          contenido: "El açai (Euterpe oleracea) es una pequeña baya morado-oscura que crece en las palmeras de açaí nativas de las selvas tropicales de Brasil, principalmente en la región amazónica. Ha sido un alimento básico de las tribus indígenas durante siglos, valorado por su increíble densidad nutricional y capacidades energéticas. Se ganó el estatus de 'superalimento' por su perfil nutricional único: contiene antocianinas antioxidantes en niveles astronómicos, ácidos grasos omega-3, 6 y 9 para salud cardiovascular y cerebral, 19 aminoácidos (más que la mayoría de frutas), fibra para salud digestiva, vitaminas A, C y E, minerales como hierro, calcio y potasio, y fitoesteroles que reducen el colesterol. Estudios científicos han demostrado que el açai mejora la función cognitiva, protege contra enfermedades cardíacas, potencia el sistema inmune, y tiene propiedades anticancerígenas. No es exageración del marketing, es ciencia respaldada por investigación. Es uno de los pocos alimentos que realmente merece el término 'superalimento'."
+        }
+      },
+      calorias: {
+        titulo: "Contenido Calórico Equilibrado - 350-450 CAL",
+        contenido: "El rango de 350-450 calorías hace de este açai bowl un desayuno o snack perfectamente calibrado que proporciona energía sin exceso. La distribución calórica es: la pulpa de açai (200g) aporta 140 calorías con antioxidantes y grasas omega, el plátano congelado añade 100 calorías de carbohidratos energéticos y potasio, las frutas frescas suman 60 calorías con vitaminas y fibra, la granola contribuye 120 calorías de carbohidratos complejos y proteína, el coco rallado y semillas de chía añaden 70 calorías de grasas saludables y omega-3. Estas son calorías nutricionalmente densas, no vacías: cada caloría viene acompañada de vitaminas, minerales, antioxidantes o fibra. A pesar del contenido calórico moderado, te mantiene lleno por 3-4 horas gracias a la fibra, grasas saludables y proteína de la granola. Es perfecto para personas activas, deportistas, o cualquiera que necesita energía sostenida. Comparado con un desayuno típico de pastelería o cereal azucarado (mismas calorías), este bowl proporciona nutrición 10 veces superior."
+      },
+      tiempo: {
+        titulo: "Preparación Ultra Rápida - Solo 10 Minutos",
+        contenido: "Los 10 minutos de preparación son tan rápidos que literalmente no tienes excusa para no desayunar saludablemente. Desglose exacto: Minuto 0-3: saca el açai del congelador y déjalo ablandar 3 minutos mientras preparas otros ingredientes. Minuto 3-5: corta el plátano congelado, saca frutas frescas y toppings del refrigerador. Minuto 5-7: licua la base de açai hasta consistencia cremosa (1-2 minutos de licuado). Minuto 7-8: vierte la base en el bowl y alisa la superficie. Minuto 8-10: decora artísticamente con todos los toppings en secciones coloridas. Es más rápido que ir a un café y ordenar un latte, más económico que comprar un açai bowl en restaurante ($12-15), e infinitamente más saludable que un desayuno de drive-through. Si congelas plátanos con anticipación y tienes açai en stock, puedes hacerlo cada mañana sin pensarlo. Es la inversión mínima de tiempo para retorno máximo de nutrición y energía. ¡Mira el video para ver lo simple que es!",
+        videoYoutube: "kB6rFPm8eX4"  // Video de açai bowl
+      }
+    }
   }
 ];
